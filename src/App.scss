@@ -1,0 +1,8 @@
+.home-nav {
+  display: flex;
+  height: 100vh;
+
+  a {
+    width: calc(100% / 4);
+  }
+}
