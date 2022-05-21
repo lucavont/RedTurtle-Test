@@ -3,14 +3,16 @@ import Title from './Title'
 import Description from './Description'
 import Button from './Button'
 
-function esercizio1() {
+function Esercizio1() {
     return (
-        <div>
-            <Title text="Infrastruttura e tecnologia dietro alle emozioni" />
-            <Description text="Infrastruttura e tecnologia dietro alle emozioni" />
-            <Button text="approfondisci" link="www.google.it" />
+        <div className='es1-container'>
+            <div className='es1-wrapper'>
+                <Title text="Infrastruttura e tecnologia dietro alle emozioni" />
+                <Description text="Infrastruttura e tecnologia dietro alle emozioni" />
+                <Button text="approfondisci" link="#" />
+            </div>
         </div>
     )
 }
 
-export default esercizio1
+export default Esercizio1

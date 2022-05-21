@@ -6,3 +6,11 @@
     width: calc(100% / 4);
   }
 }
+
+.es1-container {
+  background-image: url('./assets/esercizio1-image.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
