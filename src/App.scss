@@ -1,3 +1,9 @@
+$phone: 640px;
+$tablet: 768px;
+$desktop: 1024px;
+$custom-blue: #0C0094;
+$es2-blue: #3B34A9;
+
 .home-nav {
   display: flex;
   height: 100vh;
@@ -13,4 +19,146 @@
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+
+  .es1-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      @media screen and (min-width: $tablet) {
+        font-size: 48px;
+      }
+    }
+
+    p {
+      @media (min-width:$desktop) {
+        width: 60%;
+      }
+
+      @media (max-width:600px) {
+        font-size: 14px;
+      }
+
+      padding: 20px 0;
+      line-height: 1.5;
+    }
+  }
+
+  .es1-btn-wrapper {
+    width: fit-content;
+    margin-top: 20px;
+
+    .es1-btn {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 20px 30px;
+      background-color: $custom-blue;
+      transition: all .5s ease-in-out;
+
+      span {
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+
+      &:hover {
+        color: $custom-blue;
+        background-color: white;
+        transition: all .5s ease-in-out;
+      }
+    }
+  }
+}
+
+.es2-container {
+  padding: 0 calc(15%);
+
+  nav {
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .title-hr {
+    height: 5px;
+    background-color: $custom-blue;
+    border: none;
+    width: 20%;
+    margin: 10px 0;
+
+    @media (min-widt: $tablet) {
+      width: 6%;
+    }
+  }
+
+  .es2-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .es2-item {
+      width: 100%;
+      margin-bottom: 80px;
+
+      @media (min-width: $tablet) {
+        width: calc(30%);
+      }
+
+      .item-title {
+        text-transform: uppercase;
+        color: $custom-blue;
+        font-size: 10px;
+      }
+
+      .item-description {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      hr {
+        border: none;
+        height: 1px;
+        background-color: lightgray;
+        margin: 10px 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+
+        span {
+          color: $custom-blue;
+          vertical-align: middle;
+          margin-left: 10px;
+          transition: all .5s ease-in;
+        }
+
+        &:hover {
+          span {
+            margin-left: 20px;
+            transition: all .5s ease-out;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width:$desktop) {}
 }
