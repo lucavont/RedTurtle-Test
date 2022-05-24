@@ -18,7 +18,7 @@ function Esercizio2() {
             <Description text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
             <div className='es2-content-wrapper'>
                 {Data.map((item) => (
-                    <div className='es2-item'>
+                    <div className='es2-item' key={item.id}>
                         <div className='item-title'>
                             <h2>{item.title}</h2>
                         </div>

@@ -177,12 +177,13 @@ $custom-blue: #0C0094;
     width: 1000px;
 
     .es3-item {
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       background-color: #ffff;
 
       .item-wrapper {
         padding: 20px 20px;
         position: relative;
+        box-shadow: 0px 0px 6px 1px #dfdfdf;
 
         .item-title {
           display: flex;
@@ -212,8 +213,8 @@ $custom-blue: #0C0094;
           transition: max-height .5s cubic-bezier(0, 1, 0, 1);
 
           hr.little-hr {
-            margin-top: -10px;
-            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-bottom: 15px;
             width: 6%;
             border: 2px solid $custom-blue;
 
