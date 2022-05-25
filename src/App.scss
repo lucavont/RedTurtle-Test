@@ -266,6 +266,13 @@ $custom-blue: #0C0094;
     border: none;
     font-weight: 700;
     margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+      padding: 10px 40px;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
   }
 }
 
